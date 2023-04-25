@@ -1,6 +1,6 @@
 import React from 'react'
 import { Product, FooterBanner, HeroBanner } from '../components'
-import { client } from '../Lib/client'
+import { client } from '../lib/client'
 
 function Home({ products, bannerData }) {
   return (
@@ -11,9 +11,11 @@ function Home({ products, bannerData }) {
         <p>Ceramics of Morocco</p>
       </div>
       <div className="products-container">
-        {products?.map((product) => product.name)}
+        {products?.map((product) => (
+          <Product key={product._id} product={product} />
+        ))}
       </div>
-      <FooterBanner />
+      <FooterBanner footerBanner={bannerData && bannerData[0]} />
     </div>
   )
 }

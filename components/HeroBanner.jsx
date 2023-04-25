@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { urlFor } from '../Lib/client'
+import { urlFor } from '../lib/client'
 
 const HeroBanner = ({ HeroBanner }) => {
   return (
@@ -20,7 +20,7 @@ const HeroBanner = ({ HeroBanner }) => {
           className="hero-banner-image"
         />
         <div>
-          <Link href={'/product/${HeroBanner.product}'}>
+          <Link href={`/product/${HeroBanner.product}`}>
             <button type="button">{HeroBanner?.buttonText}</button>
           </Link>
           <div className="desc">
