@@ -6,4 +6,4 @@ import { default as Layout } from './Layout'
 import { default as NavBar } from './NavBar'
 import { default as Product } from './Product'
 
-export { Cart, Footer, FooterBanner, HeroBanner, Layout, Navbar, Product }
+export { Cart, Footer, FooterBanner, HeroBanner, Layout, NavBar, Product }
